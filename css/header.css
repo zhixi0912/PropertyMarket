@@ -1,0 +1,74 @@
+.header{
+
+}
+.header-menu{
+    min-height: 88px;
+    background-color: #407cfe;
+}
+.header-breadcrumb{
+    min-height: 78px;
+    border-bottom: 1px solid #999999;
+}
+.logo-box{
+    line-height: 88px;
+}
+.menu-box .layui-nav{
+    background-color: inherit;
+    padding: 0;
+}
+.menu-box .layui-nav .layui-nav-bar,.menu-box .layui-nav .layui-this:after{
+    background-color:#fff100 ;
+}
+.menu-box .layui-nav a{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+}
+.menu-box .layui-nav .layui-nav-item{
+    line-height: 88px;
+    height: 88px;
+}
+.seach-input-box{
+    position: relative;
+    margin-left: 0;
+    width: 200px;
+}
+.seach-input-box .seach-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: inherit;
+    color: #999999;
+}
+.seach-input-box .layui-input{
+    border-radius: 40px;
+}
+.seach-box .layui-form-item{
+    margin-bottom: 0;
+}
+.col-box{
+    color: #ffffff;
+    font-family: 'Heiti';
+}
+.col-box .tel-icon{
+    width: 28px;
+    height: auto;
+    margin-right: 10px;
+}
+.col-box .tel-box-1{
+    font-size: 16px;
+}
+.col-box .tel-box-1 .tel-t1{
+
+}
+.col-box .tel-box-2{
+    display: none;
+}
+.breadcrumb-box{
+    line-height: 78px;
+    height: 78px;
+    font-size: 16px;
+}
+.breadcrumb-box .layui-breadcrumb>*{
+    font-size: 16px;
+}
