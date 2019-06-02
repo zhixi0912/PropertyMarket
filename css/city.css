@@ -1,0 +1,110 @@
+.header .header-breadcrumb{
+    display: none;
+}
+.header-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.ban-box .layui-carousel .carousel-box{
+    text-align: center;
+}
+.ban-box .layui-carousel .carousel-box img{
+    width: 100%;
+    height: auto;
+}
+.ban-box .layui-carousel .layui-carousel-ind{
+    top:-100px;
+}
+.city-box{
+    position: relative;
+}
+.city-box .seach-box{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    height: 100px;
+    width: 100%;
+}
+.city-box .seach-box .layui-form-item{
+    position: relative;
+}
+.city-box .seach-box .layui-form-item .layui-input{
+    height: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+.city-box .seach-box .layui-form-item button{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 100px;
+    width: 180px;
+    -ms-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -ms-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+}
+.city-content .seach-box .layui-form-item button i{
+    font-size: 40px;
+}
+.city-content .city-name-box{
+    padding-top: 100px;
+}
+.city-content .city-name-box .h1{
+    font-size: 40px;
+}
+.city-box .city-name-box .h1 i{
+    font-size: 40px;
+    margin-left: 15px;
+}
+.city-content .city-name-box .h2{
+    font-size: 30px;
+    color: #999999;
+}
+.city-box .btn-box-2{
+    padding: 20px 0;
+}
+.city-content .fengge{
+    margin: 50px 0;
+}
+.city-box .city-list-box .city-list-line{
+    height: 410px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+.city-box .city-list-box .city-list-line img{
+    width: 100%;
+    height: auto;
+}
+.city-box .city-list-box .city-list-line .city-text-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left: 50px;
+    width: 320px;
+    height: 100%;
+    background: url("../images/city/city-line.png") no-repeat left top;
+}
+.city-box .city-list-box .city-list-line .city-text-box .city-text-box-chil{
+    background-color: #edf2ff;
+    height: 100%;
+}
+.city-box .city-list-box .city-list-line .city-text-box .city-text-box-chil .city-text-box-chil-pad{
+    padding-top: 120px;
+    text-align: center;
+}
+.city-box .city-list-box .city-list-line .city-text-box .city-text-box-chil .city-text-box-chil-pad a{
+    font-size: 40px;
+    color: #437aff;
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: 3px solid #437aff;
+}
+.city-box .city-list-box .city-list-line .city-text-box .city-text-box-chil .city-text-box-chil-pad p{
+    font-size: 20px;
+    line-height: 40px;
+}
