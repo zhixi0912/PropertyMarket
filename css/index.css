@@ -476,3 +476,108 @@
     width: 100%;
     height: auto;
 }
+
+
+.layui-card-body .comment-item{
+    padding-top: 30px;
+    border-bottom: 1px solid #f6f6f6;
+}
+.layui-card-body .comment-item:last-child{
+    border: none;
+}
+.content-box-7{
+    margin-bottom: 50px;
+}
+.content-box-7 .user-icon-box{
+    width: 100px;
+}
+.content-box-7 .user-icon-box img{
+    width: 80px;
+    height: 80px;
+}
+.content-box-7 .user-text{
+    width: 860px;
+}
+.content-box-7 .comment-text{
+    padding: 20px 0;
+}
+.content-box-7 .reply-box .reply-box-chil{
+    position: relative;
+}
+.content-box-7 .reply-box .reply-box-chil h2.layui-colla-title{
+    width: 20px;
+}
+.content-box-7 .reply-box  {
+    border: none;
+}
+.content-box-7 .reply-box .reply-box-chil .btn-icon{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    cursor: pointer;
+}
+.content-box-7 .reply-box .reply-box-chil h2.layui-colla-title{
+    background-color: inherit;
+    padding-left: 0;
+}
+.content-box-7 .reply-box .reply-box-chil h2 .layui-colla-icon{
+    display: none;
+}
+.content-box-7 .more-box{
+    text-align: center;
+}
+.content-box-7 .more-box .more-btn{
+    color: #6c90ff;
+    font-size: 16px;
+}
+.content-box-7 .more-box .go-btn{
+    background-color: initial;
+    color: #999999;
+}
+
+.content-box-8 .swiper-container {
+    width: 100%;
+    height: 300px;
+    padding-bottom: 60px;
+}
+.content-box-8 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.content-box-8 .swiper-slide .swiper-slide-box{
+    position: absolute;
+    left: 5%;
+    bottom: -30px;
+    width: 90%;
+    height: 60px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+.content-box-8 .swiper-slide .swiper-slide-box .t1{
+    text-align: center;
+}
+.content-box-8 .swiper-slide .swiper-slide-box .t2{
+    text-align: center;
+    color: #ff0000;
+}
+.content-box-8 .swiper-slide .swiper-slide-box .t2 span{
+    color: #999999;
+}
+.content-box-8  .swiper-pagination{
+    display: none;
+}

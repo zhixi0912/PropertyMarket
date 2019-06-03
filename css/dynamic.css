@@ -1,3 +1,92 @@
+.home-h1{
+
+}
+.home-h1 .t1{
+    line-height: 60px;
+}
+.home-h1 .t1 .name{
+    font-size: 30px;
+}
+.home-h1 .t1 .position{
+    font-size: 18px;
+    color: #999999;
+    margin-left: 15px;
+}
+.home-h1 .t2 .layui-badge{
+    margin: 0 5px;
+}
+.home-h1 .t3 span{
+    color: #999999;
+}
+.home-h1 .t3{
+    font-size: 22px;
+    color: #ff0000;
+}
+.home-h1 .t3 .tel-btn{
+    height: 50px;
+    border-radius: 50px;
+    width: 260px;
+    font-size: 22px;
+    background: #11c1fe;
+    background: -webkit-linear-gradient(left,#11c1fe,#367cfe);
+    background: -o-linear-gradient(right,#11c1fe,#367cfe);
+    background: -moz-linear-gradient(right,#11c1fe,#367cfe);
+    background: linear-gradient(to right,#11c1fe,#367cfe);
+}
+.tabs-box{
+    margin-bottom: 20px;
+}
+.tabs-box .layui-tab {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+.tabs-box .layui-tab .layui-tab-title {
+    height: auto;
+}
+.tabs-box .layui-tab .layui-tab-title li {
+    font-size: 20px;
+}
+
+.layui-tab-brief>.layui-tab-title .layui-this {
+    color: #367cfe;
+}
+.tabs-box .layui-tab .layui-tab-title .layui-this:after {
+    top: initial;
+    bottom: 0;
+    border-color: #367cfe;
+}
+.tabs-box .layui-tab .layui-tab-title li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content-box-chil{
+    border-radius: 10px;
+    background-color: #cde9ff;
+    margin-bottom: 30px;
+}
+.content-box-chil .signup-box-chil {
+    padding: 20px ;
+}
+.content-box-chil .t1{
+    text-align: center;
+    padding-top: 20px;
+}
+.content-box .tabs-header-h1 {
+    font-size: 20px;
+    line-height: 70px;
+    color: #000000;
+    height: 70px;
+}
+
+.recommend-box img.map-1{
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+}
+
+
 .swiper-container {
     width: 100%;
     height: 300px;
@@ -22,14 +111,27 @@
     -webkit-align-items: center;
     align-items: center;
 }
-.swiper-slide .swiper-slide-box{
+ .swiper-slide .swiper-slide-box{
     position: absolute;
     left: 5%;
     bottom: -30px;
     width: 90%;
     height: 60px;
-    background-color: #999;
+    background-color: rgba(255,255,255,0.5);
     border-radius: 10px;
+}
+ .swiper-slide .swiper-slide-box .t1{
+    text-align: center;
+}
+ .swiper-slide .swiper-slide-box .t2{
+    text-align: center;
+    color: #ff0000;
+}
+ .swiper-slide .swiper-slide-box .t2 span{
+    color: #999999;
+}
+  .swiper-pagination{
+    display: none;
 }
 .dynamic-list-box{
     margin-bottom: 50px;
@@ -59,9 +161,14 @@
 .dynamic-list-box .dynamic-list .layui-timeline-item .h4{
     font-size: 18px;
     color: #00a0e9;
+    margin-bottom: 20px;
 }
+
 .recommend-box{
     width: 290px;
+}
+.recommend-box .recommend-item{
+    padding: 10px 0;
 }
 .recommend-item .shop-img-box{
     width: 110px;
@@ -91,44 +198,45 @@
     padding-top: 30px;
     border-bottom: 1px solid #f6f6f6;
 }
-.layui-card-body .comment-item:first-child{
+.layui-card-body .comment-item:last-child{
     border: none;
 }
-.comment-box{
-    margin-bottom: 50px;
-}
-.user-icon-box{
-    width: 100px;
-}
-.user-icon-box img{
-    width: 80px;
-    height: 80px;
-}
-.comment-box .user-text{
-    width: 860px;
-}
-.comment-text{
-    padding: 20px 0;
-}
-.reply-box .reply-box-chil{
-    position: relative;
-}
-.reply-box .reply-box-chil h2.layui-colla-title{
-    width: 20px;
-}
-.reply-box  {
-    border: none;
-}
-.reply-box .reply-box-chil .btn-icon{
-    position: absolute;
-    top: 10px;
-    left: 50px;
-    cursor: pointer;
-}
-.reply-box .reply-box-chil h2.layui-colla-title{
-    background-color: inherit;
-    padding-left: 0;
-}
-.reply-box .reply-box-chil h2 .layui-colla-icon{
-    display: none;
-}
+
+/*.comment-box{*/
+    /*margin-bottom: 50px;*/
+/*}*/
+/*.user-icon-box{*/
+    /*width: 100px;*/
+/*}*/
+/*.user-icon-box img{*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+/*}*/
+/*.comment-box .user-text{*/
+    /*width: 860px;*/
+/*}*/
+/*.comment-text{*/
+    /*padding: 20px 0;*/
+/*}*/
+/*.reply-box .reply-box-chil{*/
+    /*position: relative;*/
+/*}*/
+/*.reply-box .reply-box-chil h2.layui-colla-title{*/
+    /*width: 20px;*/
+/*}*/
+/*.reply-box  {*/
+    /*border: none;*/
+/*}*/
+/*.reply-box .reply-box-chil .btn-icon{*/
+    /*position: absolute;*/
+    /*top: 10px;*/
+    /*left: 50px;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.reply-box .reply-box-chil h2.layui-colla-title{*/
+    /*background-color: inherit;*/
+    /*padding-left: 0;*/
+/*}*/
+/*.reply-box .reply-box-chil h2 .layui-colla-icon{*/
+    /*display: none;*/
+/*}*/

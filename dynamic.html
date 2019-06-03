@@ -11,11 +11,36 @@
 </head>
 <body>
 <div class="content">
+    <iframe src="components/header.html" width="100%" class="header-iframe" ></iframe>
     <div class="main w-1000">
-        <div class="dynamic-list-box clearfix">
+        <div class="home-h1 mb30">
+            <p class="t1"><span class="name">保利碧桂园-公园大道</span><span class="position">[海南-屯昌]</span></p>
+            <!--<p class="t2"><span class="layui-badge layui-bg-orange">低密居所</span><span class="layui-badge layui-bg-orange">景观住宅</span></p>-->
+            <p class="t3 clearfix"><span>均价</span>35000/平
+                <button class="layui-btn tel-btn fr">免费电话咨询</button>
+            </p>
+        </div>
+        <div class="tabs-box">
+            <div class="layui-tab layui-tab-brief box-shadow" lay-filter="docDemoTabBrief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this"><a href="#content-box-1">楼盘首页</a></li>
+                    <li><a href="#content-box-2">楼盘动态</a></li>
+                    <li><a href="#content-box-3">沙盘图</a></li>
+                    <li><a href="#content-box-4">楼盘户型</a></li>
+                    <li><a href="#content-box-5">楼盘信息</a></li>
+                    <li><a href="#content-box-6">周边配套</a></li>
+                    <li><a href="#content-box-7">楼盘相册</a></li>
+                    <li><a href="#content-box-8">评论</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-box-2 mb30">
+            <a href=""><img src="images/index/ban-2.png"> </a>
+        </div>
+        <div class="dynamic-list-box content-box clearfix">
             <div class="dynamic-list fl">
-                <div class="layui-card">
-                    <div class="layui-card-header">卡片面板</div>
+                <div class="layui-card box-shadow border-radius-10">
+                    <div class="layui-card-header tabs-header-h1">楼盘动态</div>
                     <div class="layui-card-body">
                         <ul class="layui-timeline">
                             <li class="layui-timeline-item">
@@ -33,7 +58,7 @@
                             <li class="layui-timeline-item">
                                 <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
                                 <div class="layui-timeline-content layui-text">
-                                    <h3 class="layui-timeline-title">8月16日</h3>
+                                    <h3 class="layui-timeline-title">08/18</br><span>2019</span></h3>
                                     <p class="h4">杜甫的思想核心是儒家的仁政思想</p>
                                     <p>杜甫的思想核心是儒家的仁政思想，他有“<em>致君尧舜上，再使风俗淳</em>”的宏伟抱负。个人最爱的名篇有：</p>
                                     <ul>
@@ -45,7 +70,31 @@
                             <li class="layui-timeline-item">
                                 <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
                                 <div class="layui-timeline-content layui-text">
-                                    <h3 class="layui-timeline-title">8月15日</h3>
+                                    <h3 class="layui-timeline-title">08/18</br><span>2019</span></h3>
+                                    <p class="h4">杜甫的思想核心是儒家的仁政思想</p>
+                                    <p>杜甫的思想核心是儒家的仁政思想，他有“<em>致君尧舜上，再使风俗淳</em>”的宏伟抱负。个人最爱的名篇有：</p>
+                                    <ul>
+                                        <li>《登高》</li>
+                                        <li>《茅屋为秋风所破歌》</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="layui-timeline-item">
+                                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                                <div class="layui-timeline-content layui-text">
+                                    <h3 class="layui-timeline-title">08/18</br><span>2019</span></h3>
+                                    <p class="h4">杜甫的思想核心是儒家的仁政思想</p>
+                                    <p>杜甫的思想核心是儒家的仁政思想，他有“<em>致君尧舜上，再使风俗淳</em>”的宏伟抱负。个人最爱的名篇有：</p>
+                                    <ul>
+                                        <li>《登高》</li>
+                                        <li>《茅屋为秋风所破歌》</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="layui-timeline-item">
+                                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                                <div class="layui-timeline-content layui-text">
+                                    <h3 class="layui-timeline-title">08/18</br><span>2019</span></h3>
                                     <p class="h4">杜甫的思想核心是儒家的仁政思想</p>
                                     <p>
                                         中国人民抗日战争胜利72周年
@@ -66,121 +115,58 @@
                     </div>
                 </div>
             </div>
-            <div class="recommend-box fr">
-                <div class="layui-card">
-                    <div class="layui-card-header">卡片面板</div>
+            <div class="content-box-chil recommend-box signup-box fr">
+                <div class="t1"><img src="images/index/box-title-2.png"></div>
+                <div class="signup-box-chil">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入您的手机号" class="layui-input border-radius-5"></div>
+                        <div class="layui-form-item layui-form-item-btn"><button class="layui-btn layui-btn-normal border-radius-5" style="width: 100%">免费订阅</button></div>
+                    </form>
+                </div>
+            </div>
+            <div class="recommend-box content-box mb30 fr">
+                <div class="layui-card box-shadow border-radius-10">
+                    <div class="layui-card-header tabs-header-h1">当前楼盘定位</div>
+                    <div class="layui-card-body">
+                        <img class="map-1" src="images/index/map-1.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="recommend-box content-box fr">
+                <div class="layui-card box-shadow border-radius-10">
+                    <div class="layui-card-header tabs-header-h1">新房推荐</div>
                     <div class="layui-card-body">
                         <div class="recommend-item clearfix">
                             <div class="shop-img-box fl">
                                 <img src="images/index/ban-3.jpg" />
                             </div>
-                            <div class="t1 h-box">卡片面板</div>
-                            <div class="t2 h-box">卡片面板</div>
-                            <div class="t3 h-box">卡片面板</div>
+                            <div class="t1 h-box">恒大外滩</div>
+                            <div class="t2 h-box">海口市</div>
+                            <div class="t3 h-box">13600/平</div>
                         </div>
                         <div class="recommend-item clearfix">
                             <div class="shop-img-box fl">
                                 <img src="images/index/ban-3.jpg" />
                             </div>
-                            <div class="t1 h-box">卡片面板</div>
-                            <div class="t2 h-box">卡片面板</div>
-                            <div class="t3 h-box">卡片面板</div>
+                            <div class="t1 h-box">恒大外滩</div>
+                            <div class="t2 h-box">海口市</div>
+                            <div class="t3 h-box">13600/平</div>
                         </div>
                         <div class="recommend-item clearfix">
                             <div class="shop-img-box fl">
                                 <img src="images/index/ban-3.jpg" />
                             </div>
-                            <div class="t1 h-box">卡片面板</div>
-                            <div class="t2 h-box">卡片面板</div>
-                            <div class="t3 h-box">卡片面板</div>
+                            <div class="t1 h-box">恒大外滩</div>
+                            <div class="t2 h-box">海口市</div>
+                            <div class="t3 h-box">13600/平</div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="comment-box">
-            <div class="layui-card">
-                <div class="layui-card-header">卡片面板</div>
-                <div class="layui-card-body">
-                    <div class="comment-item clearfix">
-                        <div class="user-icon-box layui-inline fl"><img class="layui-circle" src="images/index/ban-3.jpg"/></div>
-                        <div class="user-text fl clearfix">
-                            <div class="clearfix">
-                                <div class="user-name fl">HAYR ASD</div>
-                                <div class="user-time fr">1天前</div>
+                        <div class="recommend-item clearfix">
+                            <div class="shop-img-box fl">
+                                <img src="images/index/ban-3.jpg" />
                             </div>
-                            <div class="comment-text">棋棋械枯实打实贾克斯法大师傅</div>
-                            <div class="reply-box layui-collapse" lay-filter="test" lay-accordion>
-                                <div class="layui-colla-item reply-box-chil">
-                                    <h2 class="layui-colla-title">
-                                        <i class="layui-icon layui-icon-dialogue"></i>
-                                    </h2>
-                                    <div class="btn-icon"><i class="layui-icon layui-icon-praise"></i><span>11</span></div>
-                                    <div class="layui-colla-content">
-                                        <div class="layui-form-item">
-                                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入回复内容" class="layui-input">
-                                        </div>
-                                        <div class="layui-form-item tr">
-                                            <button class="layui-btn layui-btn-normal layui-btn-sm">百搭按钮</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment-item clearfix">
-                        <div class="user-icon-box layui-inline fl"><img class="layui-circle" src="images/index/ban-3.jpg"/></div>
-                        <div class="user-text fl clearfix">
-                            <div class="clearfix">
-                                <div class="user-name fl">HAYR ASD</div>
-                                <div class="user-time fr">1天前</div>
-                            </div>
-                            <div class="comment-text">棋棋械枯实打实贾克斯法大师傅</div>
-                            <div class="reply-box layui-collapse" lay-filter="test" lay-accordion>
-                                <div class="layui-colla-item reply-box-chil">
-                                    <h2 class="layui-colla-title">
-                                        <i class="layui-icon layui-icon-dialogue"></i>
-                                    </h2>
-                                    <div class="btn-icon"><i class="layui-icon layui-icon-praise"></i><span>11</span></div>
-                                    <div class="layui-colla-content">
-                                        <div class="layui-form-item">
-                                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入回复内容" class="layui-input">
-                                        </div>
-                                        <div class="layui-form-item tr">
-                                            <button class="layui-btn layui-btn-normal layui-btn-sm">百搭按钮</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment-item clearfix">
-                        <div class="user-icon-box layui-inline fl"><img class="layui-circle" src="images/index/ban-3.jpg"/></div>
-                        <div class="user-text fl clearfix">
-                            <div class="clearfix">
-                                <div class="user-name fl">HAYR ASD</div>
-                                <div class="user-time fr">1天前</div>
-                            </div>
-                            <div class="comment-text">棋棋械枯实打实贾克斯法大师傅</div>
-                            <div class="reply-box layui-collapse" lay-filter="test" lay-accordion>
-                                <div class="layui-colla-item reply-box-chil">
-                                    <h2 class="layui-colla-title">
-                                        <i class="layui-icon layui-icon-dialogue"></i>
-                                    </h2>
-                                    <div class="btn-icon"><i class="layui-icon layui-icon-praise"></i><span>11</span></div>
-                                    <div class="layui-colla-content">
-                                        <div class="layui-form-item">
-                                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入回复内容" class="layui-input">
-                                        </div>
-                                        <div class="layui-form-item tr">
-                                            <button class="layui-btn layui-btn-normal layui-btn-sm">百搭按钮</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="t1 h-box">恒大外滩</div>
+                            <div class="t2 h-box">海口市</div>
+                            <div class="t3 h-box">13600/平</div>
                         </div>
                     </div>
                 </div>
@@ -190,34 +176,64 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">Slide 1
-                        <div class="swiper-slide-box"></div>
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
                     </div>
                     <div class="swiper-slide">Slide 2
-                        <div class="swiper-slide-box"></div>
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
                     </div>
                     <div class="swiper-slide">Slide 3
-                        <div class="swiper-slide-box"></div>
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
                     </div>
                     <div class="swiper-slide">Slide 4
-                        <div class="swiper-slide-box"></div>
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
                     </div>
                     <div class="swiper-slide">Slide 5
-                        <div class="swiper-slide-box"></div>
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
                     </div>
                     <div class="swiper-slide">Slide 6
-                        <div class="swiper-slide-box"></div>
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
                     </div>
                     <div class="swiper-slide">Slide 7
-                        <div class="swiper-slide-box"></div>
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
                     </div>
                     <div class="swiper-slide">Slide 8
-                        <div class="swiper-slide-box"></div>
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
                     </div>
                     <div class="swiper-slide">Slide 9
-                        <div class="swiper-slide-box"></div>
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
                     </div>
                     <div class="swiper-slide">Slide 10
-                        <div class="swiper-slide-box"></div>
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Add Pagination -->
@@ -229,7 +245,7 @@
         </div>
     </div>
 </div>
-
+<iframe src="components/footer.html" width="100%" class="footer-iframe"></iframe>
 <script src="piece/jquery.2.0.0.js"></script>
 <script src="piece/layui-v2.5.0/layui/layui.js"></script>
 <script src="piece/swiper-4.5.0/dist/js/swiper.js"></script>
@@ -240,7 +256,7 @@
 
         //监听折叠
         element.on('collapse(test)', function(data){
-            layer.msg('展开状态：'+ data.show);
+            // layer.msg('展开状态：'+ data.show);
         });
     });
     var swiper = new Swiper('.swiper-container', {
