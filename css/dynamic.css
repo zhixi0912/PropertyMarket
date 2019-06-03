@@ -1,0 +1,134 @@
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    padding-bottom: 60px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide .swiper-slide-box{
+    position: absolute;
+    left: 5%;
+    bottom: -30px;
+    width: 90%;
+    height: 60px;
+    background-color: #999;
+    border-radius: 10px;
+}
+.dynamic-list-box{
+    margin-bottom: 50px;
+}
+.dynamic-list-box .dynamic-list{
+    width: 680px;
+}
+.dynamic-list-box .dynamic-list .layui-timeline-content{
+    position: relative;
+    padding-left: 100px;
+}
+.dynamic-list-box .dynamic-list .layui-timeline-content h3{
+    position: absolute;
+    left: 10px;
+    text-align: center;
+    top: 0;
+}
+.dynamic-list-box .dynamic-list .layui-timeline-content h3 span{
+    font-size: 16px;
+}
+.dynamic-list-box .dynamic-list .layui-timeline-item:before{
+    left: 85px;
+}
+.dynamic-list-box .dynamic-list .layui-timeline-item .layui-timeline-axis{
+    left: 75px;
+}
+.dynamic-list-box .dynamic-list .layui-timeline-item .h4{
+    font-size: 18px;
+    color: #00a0e9;
+}
+.recommend-box{
+    width: 290px;
+}
+.recommend-item .shop-img-box{
+    width: 110px;
+    height: 70px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.recommend-item .shop-img-box img{
+    width: 110px;
+    height: 70px;
+    border-radius: 5px;
+}
+.recommend-item  .h-box{
+    overflow: hidden;
+}
+.recommend-item .t1{
+    font-size: 20px;
+}
+.recommend-item .t2{
+    color: #999999;
+}
+.recommend-item .t3{
+    font-size: 20px;
+    color: #ff0000;
+}
+.layui-card-body .comment-item{
+    padding-top: 30px;
+    border-bottom: 1px solid #f6f6f6;
+}
+.layui-card-body .comment-item:first-child{
+    border: none;
+}
+.comment-box{
+    margin-bottom: 50px;
+}
+.user-icon-box{
+    width: 100px;
+}
+.user-icon-box img{
+    width: 80px;
+    height: 80px;
+}
+.comment-box .user-text{
+    width: 860px;
+}
+.comment-text{
+    padding: 20px 0;
+}
+.reply-box .reply-box-chil{
+    position: relative;
+}
+.reply-box .reply-box-chil h2.layui-colla-title{
+    width: 20px;
+}
+.reply-box  {
+    border: none;
+}
+.reply-box .reply-box-chil .btn-icon{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    cursor: pointer;
+}
+.reply-box .reply-box-chil h2.layui-colla-title{
+    background-color: inherit;
+    padding-left: 0;
+}
+.reply-box .reply-box-chil h2 .layui-colla-icon{
+    display: none;
+}
