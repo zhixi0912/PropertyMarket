@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相册</title>
+    <link rel="stylesheet" href="piece/layui-v2.5.0/layui/css/layui.css">
+    <link rel="stylesheet" href="piece/swiper-4.5.0/dist/css/swiper.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/album.css">
+</head>
+<body>
+<div class="content">
+    <iframe src="components/header.html" width="100%" class="header-iframe" ></iframe>
+    <div class="main w-1000">
+        <div class="home-h1 mb30">
+            <p class="t1"><span class="name">保利碧桂园-公园大道</span><span class="position">[海南-屯昌]</span></p>
+            <!--<p class="t2"><span class="layui-badge layui-bg-orange">低密居所</span><span class="layui-badge layui-bg-orange">景观住宅</span></p>-->
+            <p class="t3 clearfix"><span>均价</span>35000/平
+                <button class="layui-btn tel-btn fr">免费电话咨询</button>
+            </p>
+        </div>
+        <div class="tabs-box">
+            <div class="layui-tab layui-tab-brief box-shadow" lay-filter="docDemoTabBrief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this"><a href="#content-box-1">楼盘首页</a></li>
+                    <li><a href="#content-box-2">楼盘动态</a></li>
+                    <li><a href="#content-box-3">沙盘图</a></li>
+                    <li><a href="#content-box-4">楼盘户型</a></li>
+                    <li><a href="#content-box-5">楼盘信息</a></li>
+                    <li><a href="#content-box-6">周边配套</a></li>
+                    <li><a href="#content-box-7">楼盘相册</a></li>
+                    <li><a href="#content-box-8">评论</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-box-2 mb30">
+            <a href=""><img src="images/index/ban-2.png"> </a>
+        </div>
+
+        <div class="album">
+            <div class="album-box" id="albumBox">
+                <div class="img-li"><img src="images/index/ban-3.jpg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<iframe src="components/footer.html" width="100%" class="footer-iframe"></iframe>
+<script src="piece/jquery.2.0.0.js"></script>
+<script src="piece/layui-v2.5.0/layui/layui.js"></script>
+<script src="piece/swiper-4.5.0/dist/js/swiper.js"></script>
+<script>
+    layui.use(['element', 'layer'], function(){
+        var element = layui.element;
+        var layer = layui.layer;
+
+        //监听折叠
+        element.on('collapse(test)', function(data){
+            // layer.msg('展开状态：'+ data.show);
+        });
+    });
+    var albumList = [
+        {id:'01',src:'images/index/ban-3.jpg'},
+        {id:'02',src:'images/index/ban-3.jpg'},
+        {id:'03',src:'images/index/ban-3.jpg'},
+        {id:'04',src:'images/index/ban-3.jpg'},
+        {id:'05',src:'images/index/ban-3.jpg'},
+        {id:'06',src:'images/index/ban-3.jpg'},
+    ]
+    $(function(){
+        //albumBox
+        
+        albumLists()
+    })
+    function albumLists(){
+        if(albumList){
+            var html =''
+            for(var i=0;i<albumList.length;i++){
+                html+='<div class="img-li" layer-pid="'+albumList[i].id+'" onClick="openAlbumPopo('+albumList[i].id+')"><img src="'+albumList[i].src+'"></div>'
+            }
+            $("#albumBox").append(html)
+        }else{
+            $("#albumBox").addClass("tc")
+            $("#albumBox").html("暂无数据")
+        }
+    }
+    function openAlbumPopo(id){
+        //相册层
+        layer.photos({
+            photos: "#albumBox" //格式见API文档手册页
+            ,anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机
+        });
+    }
+</script>
+</body>
+</html>

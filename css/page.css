@@ -74,3 +74,69 @@ body{
 .box-shadow{
     -moz-box-shadow:0px 0px 15px #999999; -webkit-box-shadow:0px 0px 15px #999999; box-shadow:0px 0px 15px #999999;
 }
+
+
+
+
+.home-h1{
+
+}
+.home-h1 .t1{
+    line-height: 60px;
+}
+.home-h1 .t1 .name{
+    font-size: 30px;
+}
+.home-h1 .t1 .position{
+    font-size: 18px;
+    color: #999999;
+    margin-left: 15px;
+}
+.home-h1 .t2 .layui-badge{
+    margin: 0 5px;
+}
+.home-h1 .t3 span{
+    color: #999999;
+}
+.home-h1 .t3{
+    font-size: 22px;
+    color: #ff0000;
+}
+.home-h1 .t3 .tel-btn{
+    height: 50px;
+    border-radius: 50px;
+    width: 260px;
+    font-size: 22px;
+    background: #11c1fe;
+    background: -webkit-linear-gradient(left,#11c1fe,#367cfe);
+    background: -o-linear-gradient(right,#11c1fe,#367cfe);
+    background: -moz-linear-gradient(right,#11c1fe,#367cfe);
+    background: linear-gradient(to right,#11c1fe,#367cfe);
+}
+.tabs-box{
+    margin-bottom: 20px;
+}
+.tabs-box .layui-tab {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+.tabs-box .layui-tab .layui-tab-title {
+    height: auto;
+}
+.tabs-box .layui-tab .layui-tab-title li {
+    font-size: 20px;
+}
+
+.layui-tab-brief>.layui-tab-title .layui-this {
+    color: #367cfe;
+}
+.tabs-box .layui-tab .layui-tab-title .layui-this:after {
+    top: initial;
+    bottom: 0;
+    border-color: #367cfe;
+}
+.tabs-box .layui-tab .layui-tab-title li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

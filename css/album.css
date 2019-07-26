@@ -1,0 +1,14 @@
+
+
+.album-box .img-li{
+    display: inline-block;
+    width: 200px;
+    height: 160px;
+    border-radius: 6px;
+    margin: 15px;
+}
+.album-box .img-li img{
+    width: 200px;
+    height: 160px;
+    border-radius: 6px;
+}
