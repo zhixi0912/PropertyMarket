@@ -55,7 +55,7 @@
     bottom: -30px;
     width: 90%;
     height: 60px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.9);
     border-radius: 10px;
 }
  .swiper-slide .swiper-slide-box .t1{
@@ -124,6 +124,8 @@
 }
 .recommend-item .t1{
     font-size: 20px;
+    height: 24px;
+    overflow: hidden;
 }
 .recommend-item .t2{
     color: #999999;

@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7bafa97-5f5c-4ab8-9699-43f6a1f234dc" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/album.html" beforeDir="false" afterPath="$PROJECT_DIR$/album.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/album.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/album.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dynamic.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/dynamic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/page.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,17 +37,44 @@
       <file leaf-file-name="album.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/album.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="793">
-              <caret line="230" column="154" selection-start-line="230" selection-start-column="154" selection-end-line="230" selection-end-column="154" />
+            <state relative-caret-position="646">
+              <caret line="80" column="61" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="album.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="page.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/page.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="album.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/album.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="903">
               <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dynamic.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/dynamic.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -65,14 +95,24 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/album.html" />
         <option value="$PROJECT_DIR$/css/album.css" />
+        <option value="$PROJECT_DIR$/album.html" />
+        <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/css/page.css" />
+        <option value="$PROJECT_DIR$/css/dynamic.css" />
       </list>
     </option>
   </component>
@@ -111,6 +151,11 @@
               <item name="PropertyMarket" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PropertyMarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PropertyMarket" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -147,12 +192,12 @@
       <option name="presentableId" value="Default" />
       <updated>1564278083614</updated>
       <workItem from="1564278088613" duration="1000" />
-      <workItem from="1564278114602" duration="1437000" />
+      <workItem from="1564278114602" duration="4494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1438000" />
+    <option name="totallyTimeSpent" value="4495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -204,17 +249,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/album.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="230" column="154" selection-start-line="230" selection-start-column="154" selection-end-line="230" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/album.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="903">
           <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="80" column="61" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="145" column="18" selection-start-line="145" selection-start-column="18" selection-end-line="145" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/dynamic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
         </state>
       </provider>
     </entry>
