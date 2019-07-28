@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>相册</title>
+    <title>楼盘相册</title>
     <link rel="stylesheet" href="piece/layui-v2.5.0/layui/css/layui.css">
     <link rel="stylesheet" href="piece/swiper-4.5.0/dist/css/swiper.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/dynamic.css">
     <link rel="stylesheet" href="css/album.css">
 </head>
 <body>
@@ -37,10 +38,145 @@
         <div class="btn-box-2 mb30">
             <a href=""><img src="images/index/ban-2.png"> </a>
         </div>
+        <div class="dynamic-list-box content-box clearfix">
+            <div class="dynamic-list fl">
+                <div class="layui-card box-shadow border-radius-10">
+                    <div class="layui-card-header tabs-header-h1">楼盘相册</div>
+                    <div class="layui-card-body">
+                        <div class="album-box tc" id="albumBox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fr">
+                <div class="content-box-chil recommend-box signup-box">
+                    <div class="t1"><img src="images/index/box-title-2.png"></div>
+                    <div class="signup-box-chil">
+                        <form class="layui-form" action="">
+                            <div class="layui-form-item"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入您的手机号" class="layui-input border-radius-5"></div>
+                            <div class="layui-form-item layui-form-item-btn"><button class="layui-btn layui-btn-normal border-radius-5" style="width: 100%">免费订阅</button></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="recommend-box content-box mb30">
+                    <div class="layui-card box-shadow border-radius-10">
+                        <div class="layui-card-header tabs-header-h1">当前楼盘定位</div>
+                        <div class="layui-card-body">
+                            <img class="map-1" src="images/index/map-1.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box content-box">
+                    <div class="layui-card box-shadow border-radius-10">
+                        <div class="layui-card-header tabs-header-h1">新房推荐</div>
+                        <div class="layui-card-body">
+                            <div class="recommend-item clearfix">
+                                <div class="shop-img-box fl">
+                                    <img src="images/index/ban-3.jpg" />
+                                </div>
+                                <div class="t1 h-box">恒大外滩</div>
+                                <div class="t2 h-box">海口市</div>
+                                <div class="t3 h-box">13600/平</div>
+                            </div>
+                            <div class="recommend-item clearfix">
+                                <div class="shop-img-box fl">
+                                    <img src="images/index/ban-3.jpg" />
+                                </div>
+                                <div class="t1 h-box">恒大外滩</div>
+                                <div class="t2 h-box">海口市</div>
+                                <div class="t3 h-box">13600/平</div>
+                            </div>
+                            <div class="recommend-item clearfix">
+                                <div class="shop-img-box fl">
+                                    <img src="images/index/ban-3.jpg" />
+                                </div>
+                                <div class="t1 h-box">恒大外滩</div>
+                                <div class="t2 h-box">海口市</div>
+                                <div class="t3 h-box">13600/平</div>
+                            </div>
+                            <div class="recommend-item clearfix">
+                                <div class="shop-img-box fl">
+                                    <img src="images/index/ban-3.jpg" />
+                                </div>
+                                <div class="t1 h-box">恒大外滩</div>
+                                <div class="t2 h-box">海口市</div>
+                                <div class="t3 h-box">13600/平</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="album">
-            <div class="album-box" id="albumBox">
-                <div class="img-li"><img src="images/index/ban-3.jpg"></div>
+        </div>
+        <div class="footer-ban-box">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 3
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 4
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 5
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 6
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 7
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 8
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 9
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 10
+                        <div class="swiper-slide-box box-shadow">
+                            <p class="t1">保利碧桂园-公园大道</p>
+                            <p class="t2"><span>均价</span>35000元/平</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </div>
@@ -59,24 +195,40 @@
             // layer.msg('展开状态：'+ data.show);
         });
     });
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
     var albumList = [
-        {id:'01',src:'images/index/ban-3.jpg'},
-        {id:'02',src:'images/index/ban-3.jpg'},
-        {id:'03',src:'images/index/ban-3.jpg'},
-        {id:'04',src:'images/index/ban-3.jpg'},
-        {id:'05',src:'images/index/ban-3.jpg'},
-        {id:'06',src:'images/index/ban-3.jpg'},
+        {id:'01',tiele:'保利碧桂园-公园大道实景',src:'images/index/ban-3.jpg'},
+        {id:'02',tiele:'保利碧桂园-公园大道实景',src:'images/index/ban-3.jpg'},
+        {id:'03',tiele:'保利碧桂园-公园大道实景',src:'images/index/ban-3.jpg'},
+        {id:'04',tiele:'保利碧桂园-公园大道实景',src:'images/index/ban-3.jpg'},
+        {id:'05',tiele:'保利碧桂园-公园大道实景',src:'images/index/ban-3.jpg'},
+        {id:'06',tiele:'保利碧桂园-公园大道实景',src:'images/index/ban-3.jpg'},
     ]
     $(function(){
         //albumBox
-        
+
         albumLists()
     })
     function albumLists(){
         if(albumList){
             var html =''
             for(var i=0;i<albumList.length;i++){
-                html+='<div class="img-li" layer-pid="'+albumList[i].id+'" onClick="openAlbumPopo('+albumList[i].id+')"><img src="'+albumList[i].src+'"></div>'
+                html+='<div class="img-li" layer-pid="'+albumList[i].id+'" onClick="openAlbumPopo('+albumList[i].id+')"><div class="img-li-box"><img src="'+albumList[i].src+'" /></div><p>'+albumList[i].tiele+'</p></div>'
             }
             $("#albumBox").append(html)
         }else{

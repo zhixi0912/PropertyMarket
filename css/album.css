@@ -2,13 +2,45 @@
 
 .album-box .img-li{
     display: inline-block;
-    width: 200px;
-    height: 160px;
+    width: 246px;
+    height: 276px;
     border-radius: 6px;
-    margin: 15px;
+    margin: 20px;
+}
+.album-box .img-li p{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    overflow: hidden;
+    font-family: Heiti;
+    font-size: 16px;
+    font-weight: bold;
+}
+.album-box .img-li .img-li-box{
+    width: 246px;
+    height: 246px;
+    padding: 10px;
+    position: relative;
 }
 .album-box .img-li img{
-    width: 200px;
-    height: 160px;
-    border-radius: 6px;
+    width: 246px;
+    height: 246px;
+}
+.album-box .img-li .img-li-box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background: url("../images/album/album-top-bg.png") no-repeat center top;
+}
+.album-box .img-li .img-li-box:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    background: url("../images/album/album-bot-bg.png") no-repeat center bottom;
 }
