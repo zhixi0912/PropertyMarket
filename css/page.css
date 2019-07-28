@@ -74,6 +74,43 @@ body{
 .box-shadow{
     -moz-box-shadow:0px 0px 15px #999999; -webkit-box-shadow:0px 0px 15px #999999; box-shadow:0px 0px 15px #999999;
 }
+.btn-box-2{
+    padding: 30px 0;
+}
+
+
+/**户型tabs**/
+.content-box-3 .layui-card-header{
+    border: none;
+}
+.content-box-3 .content-tab-header-1{
+    border-bottom: 1px solid #f6f6f6;
+}
+.content-box-3 .layui-tab-title li{
+    height: 70px;
+    line-height: 70px;
+}
+.content-box-3 .layui-tab-title{
+    height: auto;
+    border: none;
+}
+.content-box-3 .layui-tab-title li{
+    padding: 0 5px;
+}
+.content-box-3 .layui-tab-title li span{
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.content-box-3 .layui-tab-title li.layui-this span{
+    color: #ffffff;
+    background-color: #437aff;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.content-box-3 .layui-tab-title li.layui-this:after{
+    display: none;
+}
+
 
 
 

@@ -1,0 +1,36 @@
+
+.apartment-box{
+    padding: 0 10px;
+}
+.apartment-box .line-box{
+    float: left;
+    width: 300px;
+    margin: 10px;
+}
+.apartment-box .line-box .img-box{
+    text-align: center;
+    width: 300px;
+}
+.apartment-box .line-box .img-box img{
+    width: 300px;
+    height: auto;
+}
+.apartment-box .line-box .text-box{
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.apartment-box .line-box .text-box .t1{
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.apartment-box .line-box .text-box .t2{
+    font-size: 16px;
+}
+.apartment-box .line-box .text-box .t2 .num{
+    font-size: 20px;
+    color: #ff0000;
+    font-weight: bold;
+}

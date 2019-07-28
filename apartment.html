@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>dynamic</title>
+    <title>楼盘户型</title>
     <link rel="stylesheet" href="piece/layui-v2.5.0/layui/css/layui.css">
     <link rel="stylesheet" href="piece/swiper-4.5.0/dist/css/swiper.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/page.css">
     <link rel="stylesheet" href="css/dynamic.css">
+    <link rel="stylesheet" href="css/apartment.css">
 </head>
 <body>
 <div class="content">
@@ -38,108 +39,52 @@
             <a href=""><img src="images/index/ban-2.png"> </a>
         </div>
         <div class="dynamic-list-box content-box clearfix">
-            <div class="dynamic-list fl">
-                <div class="layui-card box-shadow border-radius-10">
-                    <div class="layui-card-header tabs-header-h1">楼盘动态</div>
-                    <div class="layui-card-body">
-                        <ul class="layui-timeline">
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-                                <div class="layui-timeline-content layui-text">
-                                    <h3 class="layui-timeline-title">08/18</br><span>2019</span></h3>
-                                    <p class="h4">杜甫的思想核心是儒家的仁政思想</p>
-                                    <p>
-                                        layui 2.0 的一切准备工作似乎都已到位。发布之弦，一触即发。
-                                        <br>不枉近百个日日夜夜与之为伴。因小而大，因弱而强。
-                                        <br>无论它能走多远，抑或如何支撑？至少我曾倾注全心，无怨无悔 <i class="layui-icon"></i>
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-                                <div class="layui-timeline-content layui-text">
-                                    <h3 class="layui-timeline-title">08/18</br><span>2019</span></h3>
-                                    <p class="h4">杜甫的思想核心是儒家的仁政思想</p>
-                                    <p>杜甫的思想核心是儒家的仁政思想，他有“<em>致君尧舜上，再使风俗淳</em>”的宏伟抱负。个人最爱的名篇有：</p>
-                                    <ul>
-                                        <li>《登高》</li>
-                                        <li>《茅屋为秋风所破歌》</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-                                <div class="layui-timeline-content layui-text">
-                                    <h3 class="layui-timeline-title">08/18</br><span>2019</span></h3>
-                                    <p class="h4">杜甫的思想核心是儒家的仁政思想</p>
-                                    <p>杜甫的思想核心是儒家的仁政思想，他有“<em>致君尧舜上，再使风俗淳</em>”的宏伟抱负。个人最爱的名篇有：</p>
-                                    <ul>
-                                        <li>《登高》</li>
-                                        <li>《茅屋为秋风所破歌》</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-                                <div class="layui-timeline-content layui-text">
-                                    <h3 class="layui-timeline-title">08/18</br><span>2019</span></h3>
-                                    <p class="h4">杜甫的思想核心是儒家的仁政思想</p>
-                                    <p>杜甫的思想核心是儒家的仁政思想，他有“<em>致君尧舜上，再使风俗淳</em>”的宏伟抱负。个人最爱的名篇有：</p>
-                                    <ul>
-                                        <li>《登高》</li>
-                                        <li>《茅屋为秋风所破歌》</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-                                <div class="layui-timeline-content layui-text">
-                                    <h3 class="layui-timeline-title">08/18</br><span>2019</span></h3>
-                                    <p class="h4">杜甫的思想核心是儒家的仁政思想</p>
-                                    <p>
-                                        中国人民抗日战争胜利72周年
-                                        <br>常常在想，尽管对这个国家有这样那样的抱怨，但我们的确生在了最好的时代
-                                        <br>铭记、感恩
-                                        <br>所有为中华民族浴血奋战的英雄将士
-                                        <br>永垂不朽
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="layui-timeline-item">
-                                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-                                <div class="layui-timeline-content layui-text">
-                                    <div class="layui-timeline-title">过去</div>
-                                </div>
-                            </li>
+            <div class="dynamic-list content-box-3 fl">
+                <div class="layui-card layui-tab layui-tab-brief border-radius-10 box-shadow" lay-filter="apartmentBox">
+                    <div class="layui-tab-brief content-tab-header-1 clearfix" >
+                        <div class="tabs-header-h1  layui-card-header fl ">沙盘图</div>
+                        <ul class="layui-tab-title fr">
+                            <li class="layui-this" lay-id="1"><span>三居室</span></li>
+                            <li lay-id="2"><span>四居室</span></li>
+                            <li lay-id="3"><span>五居室</span></li>
+                            <li lay-id="4"><span>全部</span></li>
                         </ul>
+                    </div>
+
+                    <div class="layui-tab-content " style="min-height: 100px;">
+                        <div class="layui-tab-item layui-show apartment-box clearfix" id="apartmentCon1">
+                        </div>
+                        <div class="layui-tab-item apartment-box clearfix" id="apartmentCon2"></div>
+                        <div class="layui-tab-item apartment-box clearfix" id="apartmentCon3"></div>
+                        <div class="layui-tab-item apartment-box clearfix" id="apartmentCon4"></div>
                     </div>
                 </div>
             </div>
             <div class="fr">
-            <div class="content-box-chil recommend-box signup-box">
-                <div class="t1"><img src="images/index/box-title-2.png"></div>
-                <div class="signup-box-chil">
-                    <form class="layui-form" action="">
-                        <div class="layui-form-item"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入您的手机号" class="layui-input border-radius-5"></div>
-                        <div class="layui-form-item layui-form-item-btn"><button class="layui-btn layui-btn-normal border-radius-5" style="width: 100%">免费订阅</button></div>
-                    </form>
-                </div>
-            </div>
-            <div class="recommend-box content-box mb30">
-                <div class="layui-card box-shadow border-radius-10">
-                    <div class="layui-card-header tabs-header-h1">当前楼盘定位</div>
-                    <div class="layui-card-body">
-                        <img class="map-1" src="images/index/map-1.jpg" />
+                <div class="content-box-chil recommend-box signup-box">
+                    <div class="t1"><img src="images/index/box-title-2.png"></div>
+                    <div class="signup-box-chil">
+                        <form class="layui-form" action="">
+                            <div class="layui-form-item"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入您的手机号" class="layui-input border-radius-5"></div>
+                            <div class="layui-form-item layui-form-item-btn"><button class="layui-btn layui-btn-normal border-radius-5" style="width: 100%">免费订阅</button></div>
+                        </form>
                     </div>
                 </div>
-            </div>
-            <div class="recommend-box content-box">
-                <div class="layui-card box-shadow border-radius-10">
-                    <div class="layui-card-header tabs-header-h1">新房推荐</div>
-                    <div class="layui-card-body" id="recommend-items">
+                <div class="recommend-box content-box mb30">
+                    <div class="layui-card box-shadow border-radius-10">
+                        <div class="layui-card-header tabs-header-h1">当前楼盘定位</div>
+                        <div class="layui-card-body">
+                            <img class="map-1" src="images/index/map-1.jpg" />
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="recommend-box content-box">
+                    <div class="layui-card box-shadow border-radius-10">
+                        <div class="layui-card-header tabs-header-h1">新房推荐</div>
+                        <div class="layui-card-body" id="recommend-items">
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -174,12 +119,18 @@
     layui.use(['element', 'layer'], function(){
         var element = layui.element;
         var layer = layui.layer;
-
+        element.on('tab(apartmentBox)', function(){
+            location.hash = 'test1='+ this.getAttribute('lay-id');
+            var layId = this.getAttribute('lay-id');
+            console.log("layId-->",layId)
+            apartment(layId)
+        });
         //监听折叠
         element.on('collapse(test)', function(data){
             // layer.msg('展开状态：'+ data.show);
         });
     });
+
     //相册数据
     var albumList = [
         {id:'01',alt:'保利碧桂园-公园大道实景',src:'images/index/ban-3.jpg'},
@@ -210,8 +161,7 @@
         {id:'09',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
     ]
     $(function(){
-        //albumBox
-
+        apartment(1)
         recommendItems(recommendList,'recommend-items');//调用新房推荐公用方法
         var swiperWrappers = swiperWrapper(swiperWrapperList,'swiperWrapperBox')//调用底部滚动公用方法
         // if(!swiperWrappers){
@@ -233,6 +183,35 @@
             },
         });
     })
+    function apartment(layId) {
+        // id="apartmentCon1"
+        console.log("layId",layId)
+        var layId = layId;
+        var apartmentList=[
+            {id:'01',apartment:'3室2厅1卫',pric:'13600/平',link:'',src:'images/index/design-chart-2.png'},
+            {id:'02',apartment:'3室1厅1卫',pric:'12600/平',link:'',src:'images/index/design-chart-2.png'},
+            {id:'03',apartment:'3室1厅2卫',pric:'11600/平',link:'',src:'images/index/design-chart-2.png'},
+            {id:'04',apartment:'3室0厅1卫',pric:'13600/平',link:'',src:'images/index/design-chart-2.png'},
+            {id:'05',apartment:'3室2厅2卫',pric:'15600/平',link:'',src:'images/index/design-chart-2.png'},
+            {id:'06',apartment:'3室2厅1卫',pric:'17600/平',link:'',src:'images/index/design-chart-2.png'},
+        ]
+        var item = apartmentList
+        if(item && layId) {
+            var html = ''
+            for (var i = 0; i < item.length; i++) {
+                html += '<div class="line-box clearfix">'
+                html += '<div class="img-box">'
+                html += '<img src="'+item[i].src+'" />'
+                html += '</div>'
+                html += '<div class="text-box">'
+                html += '<p class="t1">'+item[i].apartment+layId+'</p>'
+                html += '<p class="t2">总价：<span class="num">'+item[i].pric+layId+'</span></p>'
+                html += '</div>'
+                html += '</div>'
+            }
+        }
+        $("#apartmentCon"+layId).append(html)
+    }
 </script>
 </body>
 </html>
