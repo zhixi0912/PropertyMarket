@@ -122,7 +122,6 @@
         element.on('tab(apartmentBox)', function(){
             location.hash = 'test1='+ this.getAttribute('lay-id');
             var layId = this.getAttribute('lay-id');
-            console.log("layId-->",layId)
             apartment(layId)
         });
         //监听折叠

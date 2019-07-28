@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>沙盘图</title>
+    <link rel="stylesheet" href="piece/layui-v2.5.0/layui/css/layui.css">
+    <link rel="stylesheet" href="piece/swiper-4.5.0/dist/css/swiper.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/dynamic.css">
+    <link rel="stylesheet" href="css/sandTable.css">
+</head>
+<body>
+<div class="content">
+    <iframe src="components/header.html" width="100%" class="header-iframe" ></iframe>
+    <div class="main w-1000">
+        <div class="home-h1 mb30">
+            <p class="t1"><span class="name">保利碧桂园-公园大道</span><span class="position">[海南-屯昌]</span></p>
+            <!--<p class="t2"><span class="layui-badge layui-bg-orange">低密居所</span><span class="layui-badge layui-bg-orange">景观住宅</span></p>-->
+            <p class="t3 clearfix"><span>均价</span>35000/平
+                <button class="layui-btn tel-btn fr">免费电话咨询</button>
+            </p>
+        </div>
+        <div class="tabs-box">
+            <div class="layui-tab layui-tab-brief box-shadow" lay-filter="docDemoTabBrief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this"><a href="#content-box-1">楼盘首页</a></li>
+                    <li><a href="#content-box-2">楼盘动态</a></li>
+                    <li><a href="#content-box-3">沙盘图</a></li>
+                    <li><a href="#content-box-4">楼盘户型</a></li>
+                    <li><a href="#content-box-5">楼盘信息</a></li>
+                    <li><a href="#content-box-6">周边配套</a></li>
+                    <li><a href="#content-box-7">楼盘相册</a></li>
+                    <li><a href="#content-box-8">评论</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-box-2 mb30">
+            <a href=""><img src="images/index/ban-2.png"> </a>
+        </div>
+        <div class="dynamic-list-box content-box clearfix">
+            <div class="dynamic-list fl">
+                <div class="layui-card layui-tab layui-tab-brief box-shadow border-radius-10" lay-filter="sandBox">
+                    <div class="layui-tab-brief content-tab-header-1 clearfix">
+                        <div class="tabs-header-h1  layui-card-header fl">沙盘图</div>
+                        <ul class="layui-tab-title fr">
+                            <li lay-id="0" class="layui-this">在售</li>
+                            <li lay-id="1">待售</li>
+                            <li lay-id="2">售罄</li>
+                        </ul>
+                    </div>
+                    <div class="layui-card-body layui-tab-content" id="sandBoxCon">
+                        <div class="layui-tab-item layui-tab-item-box layui-show"></div>
+                        <div class="layui-tab-item layui-tab-item-box"></div>
+                        <div class="layui-tab-item layui-tab-item-box"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="fr">
+                <div class="content-box-chil recommend-box signup-box">
+                    <div class="t1"><img src="images/index/box-title-2.png"></div>
+                    <div class="signup-box-chil">
+                        <form class="layui-form" action="">
+                            <div class="layui-form-item"><input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入您的手机号" class="layui-input border-radius-5"></div>
+                            <div class="layui-form-item layui-form-item-btn"><button class="layui-btn layui-btn-normal border-radius-5" style="width: 100%">免费订阅</button></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="recommend-box content-box mb30">
+                    <div class="layui-card box-shadow border-radius-10">
+                        <div class="layui-card-header tabs-header-h1">当前楼盘定位</div>
+                        <div class="layui-card-body">
+                            <img class="map-1" src="images/index/map-1.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box content-box">
+                    <div class="layui-card box-shadow border-radius-10">
+                        <div class="layui-card-header tabs-header-h1">新房推荐</div>
+                        <div class="layui-card-body" id="recommend-items">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <fieldset class="layui-elem-field layui-field-title tc">
+            <legend>猜你喜欢</legend>
+            <div class="layui-field-box">
+                <!--内容区域-->
+            </div>
+        </fieldset>
+        <div class="footer-ban-box">
+            <div class="swiper-container">
+                <div class="swiper-wrapper swiper-wrapper-box" id="swiperWrapperBox">
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="btn-box-2">
+            <a href=""><img src="images/index/ban-5.png"> </a>
+        </div>
+    </div>
+</div>
+<iframe src="components/footer.html" width="100%" class="footer-iframe"></iframe>
+<script src="piece/jquery.2.0.0.js"></script>
+<script src="piece/layui-v2.5.0/layui/layui.js"></script>
+<script src="piece/swiper-4.5.0/dist/js/swiper.js"></script>
+<script src="js/common.js"></script>
+<script>
+
+
+    //新房推荐数据
+    var recommendList = [
+        {id:'01',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'02',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'03',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'04',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'05',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'06',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+    ]
+    var swiperWrapperList=[
+        {id:'01',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'02',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'03',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'04',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'05',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'06',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'07',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'08',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+        {id:'09',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
+    ]
+    var sandList = [
+        {id:'1',title:'G1',label:'普通住宅,商住两用',introduce:'2个单元，18层',children:[
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'60平米'},
+                {id:'2',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'70平米'},
+                {id:'3',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'80平米'},
+                {id:'4',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'50平米'},
+                {id:'5',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'66平米'},
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'77平米'},
+            ]
+        },
+        {id:'2',title:'G2',label:'普通商住,居民住宅,学区房',introduce:'2个单元，17层',children:[
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'60平米'},
+                {id:'2',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'70平米'},
+                {id:'3',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'80平米'},
+                {id:'4',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'50平米'},
+                {id:'5',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'66平米'},
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'77平米'},
+            ]
+        },
+        {id:'3',title:'G3',label:'普通商住',introduce:'2个单元，16层',children:[
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'60平米'},
+                {id:'2',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'70平米'},
+                {id:'3',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'80平米'},
+                {id:'4',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'50平米'},
+                {id:'5',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'66平米'},
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'77平米'},
+            ]
+        },
+        {id:'4',title:'G4',label:'普通商住,学区房',introduce:'2个单元，18层',children:[
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'60平米'},
+                {id:'2',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'70平米'},
+                {id:'3',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'80平米'},
+                {id:'4',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'50平米'},
+                {id:'5',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'66平米'},
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'77平米'},
+            ]
+        },
+        {id:'5',title:'G5',label:'普通商住,居民住宅',introduce:'2个单元，15层',children:[
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'60平米'},
+                {id:'2',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'70平米'},
+                {id:'3',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'80平米'},
+                {id:'4',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'50平米'},
+                {id:'5',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'66平米'},
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'77平米'},
+            ]
+        },
+        {id:'6',title:'G6',label:'学区房',introduce:'2个单元，14层',children:[
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'60平米'},
+                {id:'2',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'70平米'},
+                {id:'3',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'80平米'},
+                {id:'4',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'50平米'},
+                {id:'5',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'66平米'},
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'77平米'},
+            ]
+        },
+        {id:'7',title:'G7',label:'商住两用',introduce:'2个单元，13层',children:[
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'60平米'},
+                {id:'2',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'70平米'},
+                {id:'3',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'80平米'},
+                {id:'4',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'50平米'},
+                {id:'5',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'66平米'},
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'77平米'},
+            ]
+        },
+        {id:'8',title:'G8',label:'居民住宅',introduce:'2个单元，12层',children:[
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'60平米'},
+                {id:'2',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'70平米'},
+                {id:'3',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'80平米'},
+                {id:'4',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'50平米'},
+                {id:'5',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'66平米'},
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'77平米'},
+            ]
+        },
+        {id:'9',title:'G9',label:'普通商住',introduce:'2个单元，11层',children:[
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'60平米'},
+                {id:'2',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'70平米'},
+                {id:'3',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'80平米'},
+                {id:'4',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'50平米'},
+                {id:'5',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'66平米'},
+                {id:'1',src:'images/index/design-chart-2.png',introduce:'2房2厅2卫',size:'77平米'},
+            ]
+        },
+    ]
+    $(function(){
+        sandBox(0)
+        recommendItems(recommendList,'recommend-items');//调用新房推荐公用方法
+        var swiperWrappers = swiperWrapper(swiperWrapperList,'swiperWrapperBox')//调用底部滚动公用方法
+        // if(!swiperWrappers){
+        //     $(".footer-ban-box").hide();
+        // }
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        layui.use(['element', 'layer'], function(){
+            var element = layui.element;
+            var layer = layui.layer;
+
+            element.on('tab(sandBox)', function(){
+                location.hash = 'test1='+ this.getAttribute('lay-id');
+                var layId = this.getAttribute('lay-id');
+                sandBox(layId)
+            });
+            element.on('tab(childTabs)', function(){
+                location.hash = 'test1='+ this.getAttribute('lay-id');
+                var layId = this.getAttribute('lay-id');
+                childTabs(layId,sandList)
+            });
+        });
+
+    })
+    
+    function sandBox(layId) {
+        /**
+         *  sandBoxCon
+         * */
+        if(layId || layId===0){
+            var html=''
+                html='<div class="sand-child-tabs" lay-filter="childTabs">'
+                html ='<div class="sand-child-tabs-header fl">暂无数据</div>'
+                html+='<ul class="sand-child-tabs-title fr">'
+                html+='<li lay-id="0" class="layui-this">二居室</li>'
+                html+='<li lay-id="1">三居室</li>'
+                html+='</ul><div class="clear"></div>'
+                html+='<div class="sand-child-tabs-content">'
+                html+='<div class="sand-child-tabs-item sand-show">暂无数据</div>'
+                html+='<div class="sand-child-tabs-item">暂无数据</div>'
+                html+='</div>'
+                html+='</div> ';
+            $("#sandBoxCon").find(".layui-tab-item-box").eq(layId).empty();
+            $("#sandBoxCon").find(".layui-tab-item-box").eq(layId).append(html)
+            childTabs(layId,sandList)
+        }
+    }
+    function childTabs(layId,item) {
+        if((layId || layId===0) && item){
+            console.log("21111")
+        }
+    }
+</script>
+</body>
+</html>

@@ -44,6 +44,10 @@
                     <div class="layui-card-header tabs-header-h1">周边配套</div>
                     <div class="layui-card-body">
                         <div class="album-box tc" id="peripheryBox">
+                            <ul class="tabs-header clearfix" id="peripheryTabsHead">
+                            </ul>
+                            <div class="tabs-con" id="tabsCon"></div>
+
                         </div>
                     </div>
                 </div>
@@ -134,9 +138,21 @@
         {id:'08',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
         {id:'09',name:'保利碧桂园-公园大道实景',city:'海口市',pric:'13600/平',link:'',src:'images/index/ban-3.jpg'},
     ]
+    var tabsList=[
+        {id:'1',title:'交通',icon:'fa fa-bus',src:'images/periphery/maps-1.jpg',trafficInfor:'公交：搭乘15路、48路公交车'},
+        {id:'2',title:'餐饮',icon:'fa fa-glass',src:'images/periphery/maps-2.jpg',trafficInfor:'公交：搭乘13路、28路公交车'},
+        {id:'3',title:'娱乐',icon:'fa fa-group',src:'images/periphery/maps-3.jpg',trafficInfor:'公交：搭乘15路、48路公交车'},
+        {id:'4',title:'购物',icon:'fa fa-shopping-cart',src:'images/periphery/maps-1.jpg',trafficInfor:'公交：搭乘45路、18路公交车'},
+        {id:'5',title:'学校',icon:'fa fa-odnoklassniki',src:'images/periphery/maps-2.jpg',trafficInfor:'公交：搭乘25路、58路公交车'},
+        {id:'6',title:'医疗',icon:'fa fa-medkit',src:'images/periphery/maps-3.jpg',trafficInfor:'公交：搭乘15路、48路公交车'},
+        {id:'7',title:'公园',icon:'fa fa-tree',src:'images/periphery/maps-1.jpg',trafficInfor:'公交：搭乘545路、18路公交车'},
+        {id:'8',title:'园区',icon:'fa fa-shopping-bag',src:'images/periphery/maps-2.jpg',trafficInfor:'公交：搭乘55路、78路公交车'},
+        {id:'9',title:'车站',icon:'fa fa-subway',src:'images/periphery/maps-3.jpg',trafficInfor:'公交：搭乘15路、98路公交车'},
+    ]
+
     $(function(){
         //periphery
-
+        tabs(tabsList,"peripheryBox")
         recommendItems(recommendList,'recommend-items');//调用新房推荐公用方法
         var swiperWrappers = swiperWrapper(swiperWrapperList,'swiperWrapperBox')//调用底部滚动公用方法
         // if(!swiperWrappers){
@@ -157,7 +173,37 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
+
     })
+    function tabs(item,id) {
+        /**
+         * 说明：周边配套tabs方法
+         * */
+        if(item && id){
+            var html1 = '';
+            var html2 = '';
+            for (var i=0;i<item.length;i++){
+                i==0 ? html1+='<li class="tabs-li on" data-id="'+i+'" onClick="tabsClick('+i+')">' : html1+='<li class="tabs-li" data-id="'+i+'" onClick="tabsClick('+i+')">'
+                html1+='<span class="'+item[i].icon+'"></span>'
+                html1+='<span class="tabs-li-title">'+item[i].title+'</span>'
+                html1+='</li>'
+                i==0 ? html2+='<div class="tabs-con-box">' : html2+='<div class="tabs-con-box none">'
+                html2+='<div class="tabs-con-traffic"><p class="traffic-t1">交通：</p><div class="traffic-t2">'+item[i].trafficInfor+'</div></div>'
+                html2+='<img class="maps-img" src="'+item[i].src+'" />'
+                html2+='</div>'
+            }
+            $("#"+id).find("ul").append(html1)
+            $("#"+id).find("#tabsCon").append(html2)
+        }
+    }
+    function tabsClick(index) {
+        /**
+         * 说明：tabs切换事件 trafficInfor
+         * */
+        $("#tabsCon").find(".tabs-con-box").hide();
+        $("#tabsCon").find(".tabs-con-box").eq(index).show();
+    }
 </script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+
+
+.content-box .layui-tab-title{
+    height: 70px;
+    border: none;
+}
+.content-box .layui-tab-title li{
+    line-height: 70px;
+    background: url("../images/index/title-bg-2.png") no-repeat center 14px;
+    color: #ffffff;
+}
+.content-box .layui-tab-title .layui-this:after{
+    height: 70px;
+}
+.content-box .layui-tab-brief>.layui-tab-title .layui-this{
+    color: #ffffff;
+    background: url("../images/index/title-bg-1.png") no-repeat center 14px;
+
+}
+.content-box .layui-tab-brief>.layui-tab-more li.layui-this{
+
+    border: none;
+}
+.content-box  .layui-tab-brief>.layui-tab-title .layui-this:after{
+    border: none;
+}
+.sand-child-tabs .layui-tab-title .layui-this:after{
+    /*border:none;*/
+}
+.content-box .layui-tab-title .layui-this:after{
+    border:none;
+}
+.content-box .sand-child-tabs-title.layui-tab-title .layui-this{
+    color: #ffffff;
+    background: url("../images/index/title-bg-1.png") no-repeat center 14px;
+
+}
