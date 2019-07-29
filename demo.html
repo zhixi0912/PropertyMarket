@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="piece/layui-v2.5.0/layui/css/layui.css">
+    <link rel="stylesheet" href="piece/swiper-4.5.0/dist/css/swiper.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+<div>
+        <div class="cation-content">
+                <div style="height:50px"></div> 
+                <div class="cation-middle">
+                <dl class="cation-list">
+                <dt>分类</dt>
+                <dd>
+                <a href="#" rel="" name="mode" class="all on">全部</a>
+                <a href="#" rel="服装鞋包" name="mode" class="default">服装鞋包</a>
+                <a href="#" rel="家电数码" name="mode" class="default">家电数码</a>
+                <a href="#" rel="英文外贸" name="mode" class="default">英文外贸</a>
+                <a href="#" rel="综合通用" name="mode" class="default">综合通用</a>
+                <a href="#" rel="食品保健" name="mode" class="default">食品保健</a>
+                <a href="#" rel="团购模板" name="mode" class="default">团购模板</a>
+                <a href="#" rel="美容护肤" name="mode" class="default">美容护肤</a>
+                <a href="#" rel="珠宝饰品" name="mode" class="default">珠宝饰品</a>
+                <a href="#" rel="鲜花礼品" name="mode" class="default">鲜花礼品</a>
+                <a href="#" rel="童装母婴" name="mode" class="default">童装母婴</a>
+                </dd>
+                </dl>
+                <dl class="cation-list">
+                <dt>主题</dt>
+                <dd>
+                <a href="#" rel="" name="theme" class="all on">全部</a>
+                <a href="#" rel="古典雅致" name="theme" class="default">古典雅致</a>
+                <a href="#" rel="可爱温馨" name="theme" class="default">可爱温馨</a>
+                <a href="#" rel="时尚简约" name="theme" class="default">时尚简约</a>
+                <a href="#" rel="潮流酷炫" name="theme" class="default">潮流酷炫</a>
+                <a href="#" rel="节日庆典" name="theme" class="default">节日庆典</a>
+                </dd>
+                </dl>
+                <dl class="cation-list">
+                <dt>色系</dt>
+                <dd>
+                <a href="#" rel="" name="system" class="all on">全部</a>
+                <a href="#" rel="多彩" name="system" class="default">多彩</a>
+                <a href="#" rel="橙色" name="system" class="default">橙色</a>
+                <a href="#" rel="粉色" name="system" class="default">粉色</a>
+                <a href="#" rel="红色" name="system" class="default">红色</a>
+                <a href="#" rel="绿色" name="system" class="default">绿色</a>
+                <a href="#" rel="蓝色" name="system" class="default">蓝色</a>
+                <a href="#" rel="黑色" name="system" class="default">黑色</a>
+                </dd>
+                </dl>
+                <dl class="cation-list">
+                <dt>价格</dt>
+                <dd>
+                <a href="#" rel="" name="price" class="all on">全部</a>
+                <a href="#" rel="2000 - 6000" name="price" class="default">2000 - 6000</a>
+                <a href="#" rel="6000 - 10000" name="price" class="default">6000 - 10000 </a>
+                <a href="#" rel="10000 - 14000" name="price" class="default">10000 - 14000 </a>
+                <a href="#" rel="18000 - 22000" name="price" class="default">18000 - 22000</a>
+                <a href="#" rel="26000 - 30000" name="price" class="default">26000 - 30000</a>
+                 </dd>
+                </dl>
+                </div>
+                </div>
+    <div class="cation-contents w-1000">
+        <div style="height:50px"></div> 
+        <div class="cation-middles layui-form cation-middles-box" lay-filter="cationMiddlesBox">
+            <div class="layui-form-item">
+                <label class="layui-form-label">区域</label>
+                <div class="layui-input-block province-box" id="provinceBox">
+                    <div class="cation-middles-head">暂无数据
+                    </div>
+                    <div class="cation-middles-coment">暂无数据
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">价格</label>
+                <div class="layui-input-block" id="priceBox">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">状态</label>
+                <div class="layui-input-block"  id="statusBox">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">户型</label>
+                <div class="layui-input-block"  id="houseTypeBox">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">特色</label>
+                <div class="layui-input-block"  id="characteristicBox">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="piece/jquery.2.0.0.js"></script>
+<script src="piece/layui-v2.5.0/layui/layui.js"></script>
+<script src="piece/swiper-4.5.0/dist/js/swiper.js"></script>
+<script>
+layui.use('form', function(){
+  var form = layui.form;
+  form.on('radio(province)', function(data){
+    defaultProvince = data.elem.value
+    provinceMethod(provinceList,'provinceBox')
+  });
+  //各种基于事件的操作，下面会有进一步介绍
+});
+var defaultProvince ='hn'
+var provinceList = [
+    {id:'01',province:'海南',value:'hn',children:[
+        {id:'01',city:'海口',value:'hk'},
+        {id:'02',city:'三亚',value:'sy'},
+    ]},
+    {id:'01',province:'广东',value:'gd',children:[
+        {id:'01',city:'广州',value:'gz'},
+        {id:'02',city:'深圳',value:'sz'},
+    ]},
+    {id:'01',province:'广西',value:'gx',children:[
+        {id:'01',city:'桂林',value:'gl'},
+        {id:'02',city:'南林',value:'nl'},
+    ]},
+]
+$(function(){
+    provinceMethod(provinceList,'provinceBox')
+    priceMethod()
+    statusMethod()
+    houseTypeMethod()
+    characteristicMethod()
+})
+function provinceMethod(item,id){
+    if(item && id){
+        var html1=''
+        var html2=''
+        for(var i =0;i<item.length;i++){
+            defaultProvince == item[i].value ? html1+='<input type="radio" name="like[province]" title="'+item[i].province+'" value="'+item[i].value+'" lay-skin="primary" lay-filter="province" checked>' :html1+='<input type="radio" name="like[province]" value="'+item[i].value+'" title="'+item[i].province+'" lay-skin="primary" lay-filter="province">'
+            if(item[i].children && defaultProvince == item[i].value){
+                for(var j=0;j<item[i].children.length;j++){
+                    j==0 ? html2+='<a class="on" href=""  value="'+item[i].children[j].value+'" >'+item[i].children[j].city+'</a>' : html2+='<a href="" value="'+item[i].children[j].value+'" >'+item[i].children[j].city+'</a>'
+                }
+                $("#"+id).find(".cation-middles-coment").empty()
+                $("#"+id).find(".cation-middles-coment").append(html2)
+            }
+        }
+        $("#"+id).find(".cation-middles-head").empty()
+        $("#"+id).find(".cation-middles-head").append(html1)
+
+        layui.use('form', function(){
+            var form = layui.form;
+            form.render(null, 'cationMiddlesBox')
+        });
+
+    }
+}
+</script>
+</body>
+</html>
